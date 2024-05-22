@@ -1,0 +1,62 @@
+
+.todoListItem{
+    display: inline-flex;
+    background-color: cornsilk;
+    margin-top: 0.5cm!important;
+    width: 52%;
+}
+.checkBox{
+    margin-right: 2cm!important;
+    padding-left: 0.2cm!important;
+    margin-left: 0.5cm;
+}
+
+.title{
+    position: "relative";
+    text-align: "left";
+    width: 5cm;
+    margin-right: 2cm;
+    margin-left: 2cm;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;   
+}
+
+.deleteButton{
+    margin-left: 4cm;
+    margin-bottom: 15px!important;
+}
+.title:hover{
+    overflow: visible; 
+    white-space: normal;
+    height:auto;
+    word-break: break-all;
+}
+
+.date{ 
+    position: "relative";
+    inline-size: 150px;
+    width: 5cm;
+    margin-right: 2cm;
+    margin-left: 2cm;
+
+}
+.statusNotCompleted{  
+    width: 5cm;
+    margin-right: 2cm;
+    margin-left: 2cm;
+    color: red;
+    font-weight: bold !important;
+    
+}
+
+.statusCompleted{
+    width: 5cm;
+    margin-right: 2cm;
+    margin-left: 2cm;
+    color: green;
+    font-weight: bold !important;
+
+
+}

@@ -1,0 +1,55 @@
+
+.todoInputLabel{
+    
+    text-align: left;
+  color:black;
+  font-size: medium;
+  margin-right: 1cm;
+  
+}
+
+.todoInputDateLabel{
+    
+    text-align: left;
+  color:black;
+  font-size: medium;
+  margin-right: 1cm;
+  
+}
+.todoDateDiv{
+    margin-right: 18.5cm;
+    margin-left: 11cm;
+}
+.todoInputBox{
+
+color: gray;
+height: 1cm;
+width: 30%;
+background-color: azure;
+  
+}
+
+.todoInputDate{
+    margin-top: 1.5%;
+    color: gray;
+    height: 0.5cm;
+    width: 4cm;
+    text-align: center;
+    margin-right: 0.4cm!important;
+    margin-left: 0.5cm;
+    }
+
+button{
+    margin-top: 2%!important;
+    flex: "left";
+    background-color: "#C0C0C0";
+    height: "1cm"
+}
+
+
+:global {
+    .todoInputTitle{
+        width: 30%;
+        }
+        
+}
