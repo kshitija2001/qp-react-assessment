@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 export const List = () => {
-	const [taskData, setTaskData] = useState([])
+	const [taskData, setTaskData] = useState([] as any)
 	const [buttonState, setButtonState] = useState(false)
 	const [page, setPage] = useState(1)
 
@@ -12,15 +12,20 @@ export const List = () => {
 		)
 			.then((response) => response.json())
 			.then((data) => {
-				setTaskData((prevtaskData) => [...prevtaskData, ...data])
+				setTaskData((prevtaskData:any) => [...prevtaskData, ...data])
+				
 			})
 	}
+	const updateButtonState = () =>{
+		console.log('taskData==>', taskData)
+		console.log('taskData.length=>', taskData.length)
+		taskData.length >= 100
+		? setButtonState(true)
+		: setButtonState(false)
+	}
 	useEffect(() => {
-		console.log('taskData==>', taskData),
-			console.log('taskData.length=>', taskData.length),
-			taskData.length >= 100
-				? setButtonState(true)
-				: setButtonState(false)
+	
+			updateButtonState()
 	}, [taskData])
 
 	return (
@@ -35,7 +40,7 @@ export const List = () => {
 			>
 				Click Me
 			</button>
-			{taskData.map((item) => (
+			{taskData.map((item:any) => (
 				<h1>{item.id}</h1>
 			))}
 		</div>
